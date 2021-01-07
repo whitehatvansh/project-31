@@ -60,8 +60,12 @@ function draw() {
     particles[j].display();
   }
 
+  for (var i = 0;i < plinkos.length;i++){
+    plinkos[i].display()
+  }
+
   if(frameCount%60===0){
-    particles.push(new Particle(random(width/2-10,width/2+10),10,10))
+    particles.push(new Particle(random(width/2-400,width/2+400),10,10))
   }
   
 
